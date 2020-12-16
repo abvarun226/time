@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="js no-touchevents" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time and Timezone Utilities</title>
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/crimson.css" rel="stylesheet">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#29BDBB">
+    <link rel="icon" sizes="24x24" href="./images/alarm-clock-24.png">
+  </head>
+  <body class="bg-light body-font">
+    <header>
+      <div class="navbar navbar-color shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="d-flex align-items-center">
+            <img src="images/alarm-clock-24.png">
+            <strong class="title">Time and Timezone Utilities</strong>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container top">
+      <div class="row" id="time-widgets"></div>
+
+      <br>
+
+      <div>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="City" id="custom-name">
+            </div>
+            <div class="col">
+              <select class="custom-select" id="custom-tz"></select>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-primary" id="add-timezone">Add TimeZone</button>
+            </div>
+            <div class="col">
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="true" data-delay="3000">
+                    <div class="toast-body">Provide both name and timezone.</div>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <br>
+
+      <h3>Convert Between Timezones</h3><br>
+      <div class="row">
+        <div class="col-md-5 mb-3">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Source</span>
+            </div>
+            <input type="text" class="form-control" id="source" aria-describedby="basic-addon3" required>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon2">Target Timezone</span>
+              </div>
+              <select class="form-control" id="timezone">
+                <option>UTC</option>
+                <option>Local</option>
+                <option>America/New_York</option>
+                <option>America/Chicago</option>
+                <option>America/Los_Angeles</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 mb-3">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon3">Target&nbsp;</span>
+            </div>
+            <input type="text" readonly class="form-control" id="target" aria-describedby="basic-addon3">
+          </div>
+        </div>
+        <div class="col-md-5 mb-3">
+          <button id="convert" class="btn btn-primary mb-2">Convert</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/moment.min.js"></script>
+    <script src="js/moment-timezone-with-data.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

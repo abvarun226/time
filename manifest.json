@@ -1,0 +1,23 @@
+{
+  "short_name": "Time",
+  "name": "Ayada time app",
+  "description": "Current time in different parts of the world",
+  "icons": [
+    {
+      "src": "images/alarm-clock-24.png",
+      "sizes": "24x24",
+      "type": "image/png"
+    },
+    {
+      "src": "images/alarm-clock-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?utm_source=web_app_manifest",
+  "background_color": "#f8f9fa",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#f8f9fa",
+  "shortcuts": []
+}

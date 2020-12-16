@@ -1,0 +1,26 @@
+.body-font {
+  font-family: 'Crimson Text', serif;
+}
+
+.navbar-color {
+  background-color:darkcyan;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color:darkcyan !important;
+  border-color: darkcyan !important;
+}
+
+.top {
+  margin-top: 10px;
+}
+
+.title {
+  margin-left: 6px;
+  font-size: 26px;
+  color: white;
+}
+
+.header-size {
+  font-size: 26px;
+}
