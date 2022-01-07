@@ -1,4 +1,4 @@
-var cacheName = 'ayada:time:v1:static';
+var cacheName = 'ayada:time:v2:static';
 
 self.addEventListener('install', function(e) {
     e.waitUntil(
